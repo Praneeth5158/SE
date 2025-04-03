@@ -1,0 +1,32 @@
+Git download link:" https://git-scm.com/downloads/win "
+Step1: Clone the repository
+Step2: cd <repository-name>
+Step3:git checkout -b feature-login
+Step4:git branch (To verify you are in correct branch) (OPTIONAL)
+Step5: Do any changes in file like create,delete,edit (or)
+Do this: Save this code as login.py
+git add .
+def login(username, password):
+    # Replace this with actual user data validation logic
+    if username == "admin" and password == "password123":
+        return "Login successful!"
+    else:
+        return "Login failed. Please check your credentials."
+
+# Example usage
+if __name__ == "__main__":
+    user = input("Enter username: ")
+    pwd = input("Enter password: ")
+    print(login(user, pwd))
+Step6:git add login.py
+Step7:git commit -m "Added login.py with a simple login function"
+Step8:git push origin feature-login
+Step9:git checkout main
+Step10:git pull origin main
+
+If you got error of logining 
+git config --global user.name "Sayed Fazal"
+git config --global user.email "sayed.fazal@example.com"
+
+git config --global user.name "saimohith-24"
+git config --global user.email "chintus2411@gmail.com"

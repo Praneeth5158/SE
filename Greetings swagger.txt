@@ -1,0 +1,45 @@
+swagger: '2.0'
+info:
+  title: Greeting API
+  description: A simple API to return greeting messages.
+  version: 1.0.0
+servers:
+  - url: http://localhost:8080
+paths:
+  /greeting:
+    get:
+      summary: Returns a simple greeting message.
+      responses:
+        '200':
+          description: A successful response.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Hello, World!
+    post:
+      summary: Returns a personalized greeting.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  example: John
+      responses:
+        '200':
+          description: A successful response.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Hello, John!
