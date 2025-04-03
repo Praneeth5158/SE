@@ -21,12 +21,15 @@ if __name__ == "__main__":
 Step6:git add login.py
 Step7:git commit -m "Added login.py with a simple login function"
 Step8:git push origin feature-login
+if error:git pull --rebase origin feature-login
+         git push origin feature-login
+
 Step9:git checkout main
 Step10:git pull origin main
 
 If you got error of logining 
-git config --global user.name "Sayed Fazal"
-git config --global user.email "sayed.fazal@example.com"
+git config --global user.name "Praneeth5158"
+git config --global user.email "praneethyamanuri@gmail.com"
 
 git config --global user.name "saimohith-24"
 git config --global user.email "chintus2411@gmail.com"
