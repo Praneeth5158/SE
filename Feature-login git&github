@@ -21,6 +21,9 @@ if __name__ == "__main__":
 Step6:git add login.py
 Step7:git commit -m "Added login.py with a simple login function"
 Step8:git push origin feature-login
+if error:git pull --rebase origin feature-login
+         git push origin feature-login
+
 Step9:git checkout main
 Step10:git pull origin main
 
